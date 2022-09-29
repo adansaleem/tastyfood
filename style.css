@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.content p{
+    font-weight: 600; 
+    color: white;
+}
+.content h1{
+    color: white;
+    font-size: 70px;
+}
+.btn{
+background-color: #ff0157;
+padding: 10px 30px;
+display: inline-block;
+color: white;
+margin-top: 20px;
+letter-spacing: 1px;
+transition: .5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 40px 100px;
+    z-index: 10000;
+}
+header.sticky{
+    background: white;
+    padding: 10px 100px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .5);
+    transition: .3s ease;
+}
+header.sticky .logo{
+    color: #111;
+}
+header.sticky .navbar-links li a{
+    color: #111;
+}
+header .logo{
+    color: white;
+    font-size: 29px;
+    font-weight: 600;
+}
+header .logo span{
+    color: #ff0157;
+}
+header .navbar-links{
+    display: flex;
+    position: relative;
+}
+header .navbar-links li{
+    margin-left: 30px;
+}
+header .navbar-links li a{
+    color: white;
+    font-weight: 400;
+}
+header .navbar-links li a:hover{
+    color: #ff0157;
+    transition: .4s;
+}
+/* ---------------------about--------------------- */
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col-about{
+    width: 48%;
+    position: relative;
+}
+.row .title-text{
+    color: #111;
+    font-size: 33px;
+}
+.title-text span{
+    font-size: 50px;
+    color: #ff0157;
+    font-weight: 700;
+}
+.row .about-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.row .about-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ----------------our menu------------------ */
+.title{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .box{
+    width: 340px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 20px rgb(0, 0, 0,.5);
+    margin: 20px;
+}
+.menu .box .imgbox{
+position: relative;
+width: 100%;
+height: 300px;
+}
+.menu .box .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .box .text{
+    padding: 15px 0 5px;
+}
+/* ----------expert------------- */
+.expert .content1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 40px;
+    width: 100%;
+}
+.expert .content1 .boxone{
+    width: 207px;
+    margin: 15px;
+}
+.expert .content1 .boxone .imgbx{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.expert .content1 .boxone .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --------------testimonials--------------- */
+.testimonials{
+    background: url(images/bg2.jpg);
+    background-size: cover;
+}
+.white{
+    color: #fff;
+}
+.testimonials .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.testimonials .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.testimonials .content .box .imgbx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin: auto;
+
+}
+.testimonials .content .box .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+.testimonials .content .box .text{
+    text-align: center;
+    margin-top: 20px;
+}
+.testimonials .content .box .text p{
+    color: #111;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.testimonials .content .box .text h2{
+    color: #ff0157;
+    font-size: 22px;
+}
+
+/* ---------------contact us ---------------------- */
+.contact{
+    background: url(images/bg3.jpg);
+    background-size: cover;
+}
+.contactform{
+    box-shadow: 0 5px 40px rgba(0, 0, 0, .2);
+    padding: 75px 40px;
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactform h3{
+    font-size: 22px;
+    color: #111;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactform .inputbox input,.contactform .inputbox textarea{
+    width: 100%;
+    border: 1px solid #111;
+    outline: none;
+    font-size: 16px;
+    resize: none;
+    padding: 10px;
+}
+.contactform .inputbox input[type="submit"]
+{
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    background: #ff0157;
+    color: white;
+    display: inline-block;
+    max-width: 100px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.copyright{
+    padding: 8px 20px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    text-align: center;
+}
+.copyright a{
+    color: #ff0157;
+    font-weight: 600;
+}
+/* ------------media query--------------- */
+@media (max-width:800px) {
+    
+    header,header .sticky{
+        padding:10px 20px ;
+    }
+    header .navbar-links{
+        display: none;
+    }
+    .menuToggle{
+        position: relative;
+        background: url(images/menu.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+    }
+    .menuToggle .active{
+        background: url(images/close.png);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: center;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+}
